@@ -27,3 +27,98 @@
     text-align: left;
     text-transform: capitalize;
         }
+ .hero-section {
+           
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('./assets/hero-bg.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+ }
+ .badge {
+         /* Frame 2087326311 */
+    
+       display: inline-flex;
+        padding: 8px 12px 8px 12px;
+        border-radius: 1000px;
+        background: rgba(255, 255, 255, 1);
+        color: #30B868;
+
+
+        }
+    #writing_style{
+        font-family: Inter;
+font-style: Bold;
+font-size: 72px;
+font-weight: 700;
+line-height: 84px;
+letter-spacing: 0%;
+text-align: center;
+text-transform: capitalize;
+    }
+.subtitle{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Inter;
+font-style: Regular;
+font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+}
+
+
+.button-container {
+  display: flex;
+  gap: 15px; /* Space between the two buttons */
+  align-items: center;
+  padding: 40px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+/* Primary Green Button */
+.btn-primary {
+  background-color: #4c8c64;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #3e7352;
+}
+
+/* Outline Button */
+.btn-outline {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #ffffff;
+}
+
+.btn-outline:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Icon Styling */
+.btn-icon {
+  width: 20px; /* Adjust based on your image size */
+  height: auto;
+  margin-right: 12px;
+}
+
