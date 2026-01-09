@@ -92,6 +92,9 @@ text-align: center;
   font-family: sans-serif;
   text-decoration: none;
 }
+.btn:hover {
+  background-color: rgba(133, 53, 53, 0.1);
+}
 
 /* Primary Green Button */
 .btn-primary {
@@ -184,6 +187,11 @@ background: rgba(249, 85, 85, 1);
 display:inline-flex;
 justify-content: center;
 align-items: center;
+ width: 64px;
+  height: 64px;
+  border: 2px;
+  border-radius: 50%;
+
 }
 .heading_text{
    color:#001931;
@@ -301,7 +309,6 @@ display: flex;
 flex-direction: column;
 justify-content: flex-start;
 align-items: center;
-gap: 24;
 padding: 80px 40px 80px 40px;
 border-radius: 12px;
 background: rgba(247, 246, 242, 1);
@@ -319,4 +326,110 @@ line-height: 48px;
 letter-spacing: 0%;
 text-align: center;
 text-transform: capitalize;
+}
+/* Basic reset for the footer area */
+.footer,
+.footer * {
+  box-sizing: border-box;
+}
+
+/* Footer container */
+.footer {
+  background: rgba(0, 25, 49, 1); /* or use your --Style var */
+  color: #FAFAFA;
+  padding: 60px 20px;              /* vertical padding, responsive horizontal */
+  width: 100%;
+}
+
+/* Inner container (centers content and limits width) */
+.inner_footer {
+  max-width: 1200px;               /* use a sensible max width */
+  margin: 0 auto;                  /* center it */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;                       /* MUST include unit */
+  width: 100%;
+}
+
+/* Brand */
+.footer-brand img {
+  height: 48px;                    /* adjust size */
+  width: auto;
+  display: block;
+}
+
+/* Social block */
+.footer-social {
+  text-align: right;
+}
+
+.social-title {
+  margin: 0 0 8px 0;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  color: rgba(250,250,250,0.9);
+}
+
+
+.social-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+.social-links .fa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid rgba(229,231,235,0.08);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background 0.18s, transform 0.18s, border-color 0.18s;
+}
+
+.social-links .fa:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateY(-3px);
+  border-color: rgba(255,255,255,0.14);
+}
+
+/* Separator line */
+.footer-sep {
+  border: none;
+  height: 1px;
+  background: rgba(229,231,235,0.12);
+  margin: 28px auto 18px;
+  max-width: 1200px;
+  width: calc(100% - 40px); 
+}
+
+/* Copyright */
+.footer-copy {
+  text-align: center;
+  margin: 0;
+  color: rgba(250,250,250,0.9);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 12px;
+}
+
+
+
+  .footer-social {
+    text-align: center;
+  }
+
+  .footer-sep {
+    width: calc(100% - 20px);
+  }
 }
